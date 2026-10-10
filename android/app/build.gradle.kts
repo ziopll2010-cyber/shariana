@@ -4,10 +4,18 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
-android {
-    namespace = "com.example.flutter_application_1"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+aandroid {
+    namespace 'com.example.shariana'
+    compileSdkVersion 34
+    
+    defaultConfig {
+        applicationId "com.example.shariana"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+    }
+...
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
